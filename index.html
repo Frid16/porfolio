@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigfrid Simbe Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "hHRSEc02ykVPiZBbfs",
+      });
+   })();
+</script>
+  
+</head>
+<body>
+
+
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+          <span class="toggle-ball"></span>
+
+    </div>
+      <div class="logo">
+        <img src="image/logoo.png" alt="Logo">
+      </div>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Sigfrid</span></h1>
+      <p>Frontend Developer</p>
+      <a href="#about" class="btn">More About Me</a>
+      <div class="socials">
+      <a href="https://www.facebook.com/share/1EtDpxq7nB/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://github.com/sigsimbe16-cmd" class="social-icon github"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/516frid_?igsh=MXE4b2RhbzNqNWhwNw==" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+    </div>
+    
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="image/pro.png" alt="Sigfrid Simbe">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hi, I'm <strong>Sigfrid Simbe</strong>, a passionate IT professional with experience 
+        in technical support, web development, and community projects. I enjoy solving problems and building user-friendly solutions.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio Showcase</h2>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="skills-tab">Skills</button>
+      <button class="tab-btn" data-tab="certificates-tab">Certificates</button>
+      <button class="tab-btn"  data-tab="project">Project</button>
+    </div>
+
+     <!-- Skills Tab -->
+<div id="skills-tab" class="tab active">
+  <div class="skills-container">
+    <div class="skill">
+      <i class="fa-brands fa-html5" style="color: #ef5d03; font-size: 3rem;"></i>
+    </div>
+    <div class="skill">
+      <i class="fa-brands fa-css3-alt" style="color: #2674f2; font-size: 3rem;"></i>
+    </div>
+    <div class="skill">
+      <i class="fa-brands fa-js" style="color: #FFD43B; font-size: 3rem;"></i>
+    </div>
+    <div class="skill">
+      <i class="fa-solid fa-database" style="color: #74C0FC; font-size: 3rem;"></i>
+    </div>
+    <div class="skill">
+      <i class="fa-solid fa-palette" style="color: #c972f7; font-size: 3rem;"></i>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Certificates Tab -->
+      <div id="certificates-tab" class="tab">
+        <div class="cert-grid">
+             <div class="cert-card" onclick="openModal('image/cert2.png')">
+            <img src="image/certificates/1.png" alt="Enterprise Networking, Security and Automation">
+            <h3>Enterprise Networking, <br>Security and Automation</h3>
+            <p>CISCO • 2023</p>
+          </div>
+          <div class="cert-card" onclick="openModal('image/cert2.png')">
+            <img src="image/certificates/2.png" alt="Introduction to Cybersecurity">
+            <h3>Introduction <br> to Cybersecurity</h3>
+            <p>CISCO • 2023</p>
+          </div>
+          <div class="cert-card" onclick="openModal('image/cert3.png')">
+            <img src="image/certificates/3.png" alt="DevNet Associate">
+            <h3>DevNet Associate</h3>
+            <p>CISCO • 2024</p>
+          </div>
+            <div class="cert-card" onclick="openModal('image/cert2.png')">
+            <img src="image/certificates/4.png" alt="Cybersecurity Essential">
+            <h3>Cybersecurity Essential</h3>
+            <p>CISCO • 2023</p>
+          </div>
+           <div class="cert-card" onclick="openModal('image/cert2.png')">
+            <img src="image/certificates/5.png" alt="JavaScript Advanced Certificate">
+            <h3>JavaScript Advanced</h3>
+            <p>Open EDG • 2023</p>
+          </div>
+           <div class="cert-card" onclick="openModal('image/cert2.png')">
+            <img src="image/certificates/6.png" alt="Big Data & Analytics">
+            <h3>Big Data & Analytics</h3> 
+            <p>CISCO • 2023</p>
+          </div>
+           <div class="cert-card" onclick="openModal('image/cert2.png')">
+            <img src="image/certificates/7.png" alt="Cybersecurity Awarness">
+            <h3>Cybersecurity Awarness</h3>
+            <p>DICT • 2024</p>
+          </div>
+           <div class="cert-card" onclick="openModal('image/cert2.png')">
+            <img src="image/certificates/8.png" alt="Beginners Guide to Artificial Intelligence">
+            <h3>Beginners Guide to Artificial Intelligence</h3>
+            <p>DICT • 2024</p>
+          </div>
+      
+        </div>
+      </div>
+
+       <!-- Projects -->
+  <div id="project" class="tab">
+    <div class="grid">
+  <a href="https://sigsimbe16-cmd.github.io/coffee-website/" target="_blank">
+    <div class="card">
+      <img src="image/coffee project.png" alt="Project One">
+      <h3>Coffee Shop Website</h3>
+    </div>
+  </a>
+
+  <div class="card">
+    <img src="image/cabs.png" alt="Project Two">
+    <h3>Cabs. Infolink<br>Enhancing Community<br>Involvement</h3>
+  </div>
+
+  <div class="card">
+    <img src="image/travel.png" alt="Project Three">
+    <h3>Travel Website</h3>
+  </div>
+</div>
+  </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMail(); return false;">
+      <input type="text" id="fullname" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="text" id="phonenumber" placeholder="Phone Number">
+      <input type="text" id="subject" placeholder="Subject">
+      <textarea id="yourmessage" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+
+
+
+  <!-- Footer------- -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<footer>
+  <a href="image/RESUME.pdf" class="btn">Download Resume</a>
+  
+  <div class="footer-info">
+    <p><i class="fas fa-map-marker-alt"></i>Cabugao, Ilocos Sur</p>
+    <p><i class="fas fa-phone"></i> +63 936 126 6906</p>
+    <p><i class="fas fa-envelope"></i> 
+      <a href="mailto:simbesig16@gmail.com">simbesig16@gmail.com</a>
+    </p>
+  </div>
+  <div class="socials">
+    <a href="https://facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/" target="_blank" class="github"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+</div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
